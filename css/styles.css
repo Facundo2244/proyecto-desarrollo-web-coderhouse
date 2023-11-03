@@ -86,6 +86,7 @@ h1{
 h2{
     color: #CF142C;
     font-family: 'Poppins', sans-serif;
+    margin-top: 2%;
 }
 
 .main{
@@ -176,6 +177,107 @@ h2{
 .boton:hover{
     background-color:mediumaquamarine;
     transform: scale(1.2);
+}
+
+/* pagina nuestros productos */
+.productos-expo{
+    background-color: #006864;
+}
+.productos-expo h1{
+    color: white;
+}
+.nuestros-productos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #006864;
+    padding: 5% 0;
+}
+
+
+.productos {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    
+}
+
+.productos .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.productos .frente {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.productos .frente img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos .frente h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.productos .dorso {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 10px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.productos .dorso .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.productos .dorso .link a {
+    color: white;
+}
+
+.productos .dorso h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.productos .dorso p {
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; 
+} 
+
+.productos:hover .frente {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.productos:hover .dorso {
+    transform: perspective(600px) rotateY(360deg);
 }
 
 /* responsive */
