@@ -126,8 +126,59 @@ h2{
     display: none;
 }
 
-/* index-responsive*/
 
+/* pagina novedades */
+.sub-novedades{
+    text-align: center;
+}
+.novedades {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; 
+    color: #006864;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.noticia img {
+    max-width: 100%;
+
+}
+.novedades .noticia p {
+    margin: 10px 0; 
+}
+.boton{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #006864;
+    border: 1px solid #006864;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-family: 'Poppins', sans-serif;
+}
+.noticia:hover{
+    box-shadow: 5px 5px 200px rgba(0,0, 0, 4);
+    transform: translateY(-3%);  
+}
+.boton:hover{
+    background-color:mediumaquamarine;
+    transform: scale(1.2);
+}
+
+/* responsive */
 
 @media (max-width: 864px){
     .footer{
@@ -135,7 +186,9 @@ h2{
         text-align: center;
         gap: 10px;
     }
-}
+    .novedades {
+        grid-template-columns: 1fr;
+    }
 
 @media (max-width: 750px){
    .menu{
@@ -175,7 +228,6 @@ h2{
 }
 }
 
-/* quienes-somos-responsive */
 @media (max-width: 750px){
     .vuela{
         display: none;
