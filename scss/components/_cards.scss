@@ -1,0 +1,17 @@
+.card{
+    display: flex ;
+    align-items: center;
+    text-align: center;
+    margin: 1% 5%;
+    img{
+        max-width: 50%;
+    }
+    p{
+        color: $color-principal;
+    font-family: 'Poppins', sans-serif; 
+    padding-left: 2%;
+    font-size: 85%;
+    font-weight: 700;
+
+    }
+}

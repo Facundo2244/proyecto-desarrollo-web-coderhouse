@@ -1,0 +1,30 @@
+footer{
+    background-color:$color-header-footer;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    color: $color-secundario;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    align-items: center;
+    .clientes-proveedores{
+        a{
+            color: $color-secundario;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+    }
+    .redes-sociales{
+        img{
+            height: 40px;
+    margin-left: 5px;
+        }
+    }
+       
+}
+

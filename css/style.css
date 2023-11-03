@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3eeee;
+  padding: 1rem 1.5rem; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem; }
+  nav #toggle {
+    display: none; }
+  nav label {
+    display: none; }
+  nav a img {
+    width: 40px; }
+  nav div ul li a {
+    text-decoration: none;
+    color: #CF142C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; }
+    nav div ul li a:hover {
+      color: #006864; }
+
+.banner a img {
+  width: 100%;
+  min-height: 150px; }
+
+.info-empresa div {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); }
+
+footer {
+  background-color: #e3eeee;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  color: #CF142C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  align-items: center; }
+  footer .clientes-proveedores a {
+    color: #CF142C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: none; }
+  footer .clientes-proveedores ul {
+    list-style-type: none; }
+  footer .redes-sociales img {
+    height: 40px;
+    margin-left: 5px; }
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1% 5%; }
+  .card img {
+    max-width: 50%; }
+  .card p {
+    color: #006864;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2%;
+    font-size: 85%;
+    font-weight: 700; }
