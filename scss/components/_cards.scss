@@ -8,11 +8,8 @@
             max-width: 50%;
         }
         p{
-            color: $color-principal;
-        font-family: 'Poppins', sans-serif; 
         padding-left: 2%;
         font-size: 85%;
-        font-weight: 700;
         }
     }
 }
@@ -76,13 +73,11 @@
                     font-size: 30px;
                     margin-top: 20px;
                     letter-spacing: 2px;
-                    font-family: 'Poppins', sans-serif;
 
                 }
                 p{
                     letter-spacing: 1px;
-                    font-family: 'Poppins', sans-serif; 
-
+                    color: white;
                 }
             }
             &:hover .frente{
@@ -95,12 +90,11 @@
     }
 }
 
+
 .novedades{
+    
     div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (column, none, center,center);
         background-color: white;
         border: 1px solid #ccc;
         padding: 20px;
@@ -109,6 +103,7 @@
         color: #006864;
         font-family: 'Poppins', sans-serif;
         text-align: center;
+        align-items: center;
         img{
             max-width: 100%;
             

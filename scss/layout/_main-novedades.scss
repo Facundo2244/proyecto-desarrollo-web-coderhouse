@@ -1,9 +1,24 @@
-.sub-novedades{
-    text-align: center;
-}
-.novedades{
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+.noticias{
+    background: rgb(0,104,100);
+    background: radial-gradient(circle, rgba(0,104,100,1) 0%, rgba(227,238,238,0.11) 83%, rgba(207,20,44,1) 92%);
+    .novedades{
+        @include grid ( repeat(3,1fr), none, none, 20px);
+        margin-top: 5%;
+    }
+    .destacadas{
+        padding: 2% 5%;
+        .noticias-destacadas{
+            @include grid(1fr 1fr, 1fr, none, 3%);
+            text-align: center;
+            padding: 2% 0;
+            div{
+                p{
+                    color: #032336;
+                    font-weight: map-get($grosorfuentes , titulos );
+                }
+            }
+    }
+    }   
+    }
+
+

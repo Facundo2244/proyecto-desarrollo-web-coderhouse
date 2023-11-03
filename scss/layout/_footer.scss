@@ -1,12 +1,11 @@
 footer{
-    @extend nav;
+    @include flex (none, none, space-between, center);
+    background-color: $color-header-footer;
     padding: 1%;
-    flex-wrap:unset;
     color: $color-secundario;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
     text-decoration: none;
-
+    font-weight: 700;
+    align-items: center;
 
     .clientes-proveedores{
         a{
@@ -21,6 +20,12 @@ footer{
         img{
             height: 35px;
             margin-left: 5px;
+        }
+    }
+    div{
+        p{
+            color: $color-secundario;
+            font-weight: map-get($grosorfuentes , titulos );
         }
     }
        

@@ -3,13 +3,15 @@
     h1{
         color: white;
     }
+    h2{
+        color: white
+    }
     section{
-        @extend nav;
-        justify-content: center;
+        @include flex (none, wrap, center, none);
+        align-items: center;
         min-height: 100vh;
         background-color: $color-principal;
         padding: 5% 0;
-        align-items: center;
     }
 }
 

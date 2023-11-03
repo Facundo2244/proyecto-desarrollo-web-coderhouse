@@ -4,27 +4,46 @@
   margin: 0;
   box-sizing: border-box; }
 
-nav, .productos-expo section, footer {
+html {
+  font-family: 'Poppins', sans-serif; }
+
+h1 {
+  color: #CF142C;
+  text-align: center;
+  font-weight: 700; }
+
+h2 {
+  color: #CF142C;
+  margin-top: 2%;
+  font-weight: 700;
+  text-align: center; }
+
+p {
+  color: #006864;
+  font-weight: 400; }
+
+nav {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
   background-color: #e3eeee;
   padding: 1rem 1.5rem; }
-  nav ul, .productos-expo section ul, footer ul {
+  nav ul {
     list-style: none;
     display: flex;
     gap: 5rem; }
-  nav #toggle, .productos-expo section #toggle, footer #toggle, nav label, nav .productos-expo section label, .productos-expo section nav label, .productos-expo section label, nav footer label, footer nav label, footer label {
+  nav #toggle, nav label {
     display: none; }
-  nav a img, .productos-expo section a img, footer a img {
+  nav a img {
     width: 40px; }
-  nav div ul li a, .productos-expo section div ul li a, footer div ul li a {
+  nav div ul li a {
     text-decoration: none;
     color: #CF142C;
     font-family: 'Poppins', sans-serif;
     font-weight: 700; }
-    nav div ul li a:hover, .productos-expo section div ul li a:hover, footer div ul li a:hover {
+    nav div ul li a:hover {
       color: #006864; }
 
 .banner a img {
@@ -33,28 +52,27 @@ nav, .productos-expo section, footer {
 
 .info-empresa div {
   display: grid;
-  grid-template-rows: repeat(3, 1fr); }
+  grid-template-columns: none;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: none;
+  gap: none; }
 
 .productos-expo {
   background-color: #006864; }
   .productos-expo h1 {
     color: white; }
+  .productos-expo h2 {
+    color: white; }
   .productos-expo section {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: none;
+    align-items: center;
     min-height: 100vh;
     background-color: #006864;
-    padding: 5% 0;
-    align-items: center; }
-
-h1 {
-  color: #CF142C;
-  font-family: 'Poppins', sans-serif;
-  text-align: center; }
-
-h2 {
-  color: #CF142C;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 2%; }
+    padding: 5% 0; }
 
 .main {
   background-image: url(../../assets/img/fondo-1440-1501.jpg);
@@ -71,42 +89,67 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-template-areas: none;
+    gap: 3%;
     text-align: center;
     color: #006864;
     font-family: 'Poppins', sans-serif;
     font-size: .8rem;
-    gap: 3%;
     padding: 2% 0; }
     .main .unidades-de-negocio img {
       max-width: 100%; }
     .main .unidades-de-negocio p {
-      margin: 2%; }
+      margin: 2%;
+      font-weight: 400; }
     .main .unidades-de-negocio div .vuela2 {
       display: none; }
 
-.sub-novedades {
-  text-align: center; }
+.noticias {
+  background: #006864;
+  background: radial-gradient(circle, #006864 0%, rgba(227, 238, 238, 0.11) 83%, #cf142c 92%); }
+  .noticias .novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: none;
+    gap: 20px;
+    margin-top: 5%; }
+  .noticias .destacadas {
+    padding: 2% 5%; }
+    .noticias .destacadas .noticias-destacadas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: none;
+      gap: 3%;
+      text-align: center;
+      padding: 2% 0; }
+      .noticias .destacadas .noticias-destacadas div p {
+        color: #032336;
+        font-weight: 700; }
 
-.novedades {
-  margin-top: 5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; }
-
-main .container {
-  width: 80%;
-  padding: 45px;
-  border-radius: 0; }
-  main .container .row {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+.contactate {
+  background-color: #006864;
+  background-image: linear-gradient(62deg, #006864 0%, #cf142c 100%); }
+  .contactate .container {
+    width: 80%;
+    padding: 45px;
+    border-radius: 0; }
+    .contactate .container .row {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
 
 footer {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #e3eeee;
   padding: 1%;
-  flex-wrap: unset;
   color: #CF142C;
-  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
   font-weight: 700;
-  text-decoration: none; }
+  align-items: center; }
   footer .clientes-proveedores a {
     color: #CF142C;
     text-decoration: none; }
@@ -115,6 +158,9 @@ footer {
   footer .redes-sociales img {
     height: 35px;
     margin-left: 5px; }
+  footer div p {
+    color: #CF142C;
+    font-weight: 700; }
 
 .info-empresa article {
   display: flex;
@@ -124,11 +170,8 @@ footer {
   .info-empresa article img {
     max-width: 50%; }
   .info-empresa article p {
-    color: #006864;
-    font-family: 'Poppins', sans-serif;
     padding-left: 2%;
-    font-size: 85%;
-    font-weight: 700; }
+    font-size: 85%; }
 
 .productos-expo section .productos {
   position: relative;
@@ -179,11 +222,10 @@ footer {
     .productos-expo section .productos .dorso h3 {
       font-size: 30px;
       margin-top: 20px;
-      letter-spacing: 2px;
-      font-family: 'Poppins', sans-serif; }
+      letter-spacing: 2px; }
     .productos-expo section .productos .dorso p {
       letter-spacing: 1px;
-      font-family: 'Poppins', sans-serif; }
+      color: white; }
   .productos-expo section .productos:hover .frente {
     transform: perspective(600px) rotateY(180deg); }
   .productos-expo section .productos:hover .dorso {
@@ -192,8 +234,9 @@ footer {
 .novedades div {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   background-color: white;
   border: 1px solid #ccc;
   padding: 20px;
@@ -201,7 +244,8 @@ footer {
   margin: 10px;
   color: #006864;
   font-family: 'Poppins', sans-serif;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
   .novedades div img {
     max-width: 100%; }
   .novedades div p {
@@ -224,6 +268,7 @@ footer {
     transform: translateY(-3%); }
 
 main .container .row .col-md-7 {
+  background-color: white;
   padding: 20px; }
   main .container .row .col-md-7 .form-control {
     height: 52px;
@@ -246,20 +291,20 @@ main .container .row .col-md-5 {
     padding-left: 18px; }
 
 @media (max-width: 767px) {
-  nav .menu, .productos-expo section .menu, footer .menu {
+  nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden; }
-    nav .menu ul, .productos-expo section .menu ul, footer .menu ul {
+    nav .menu ul {
       flex-direction: column;
       align-items: center;
       padding: 0.5rem 0px;
       gap: 3rem; }
-  nav label, .productos-expo section label, footer label {
+  nav label {
     display: flex;
     color: #CF142C;
     cursor: pointer; }
-  nav #toggle:checked ~ .menu, .productos-expo section #toggle:checked ~ .menu, footer #toggle:checked ~ .menu, nav label:checked ~ .menu, .productos-expo section nav label:checked ~ .menu, nav .productos-expo section label:checked ~ .menu, footer nav label:checked ~ .menu, nav footer label:checked ~ .menu, nav .productos-expo section label:checked ~ .menu, .productos-expo section nav label:checked ~ .menu, .productos-expo section label:checked ~ .menu, footer .productos-expo section label:checked ~ .menu, .productos-expo section footer label:checked ~ .menu, nav footer label:checked ~ .menu, footer nav label:checked ~ .menu, .productos-expo section footer label:checked ~ .menu, footer .productos-expo section label:checked ~ .menu, footer label:checked ~ .menu {
+  nav #toggle:checked ~ .menu, nav label:checked ~ .menu {
     height: 100%; }
   footer {
     flex-direction: column;
@@ -267,7 +312,7 @@ main .container .row .col-md-5 {
     gap: 10px; }
     footer .redes-sociales img {
       height: 30px; }
-  .novedades {
+  .noticias .novedades {
     grid-template-columns: 1fr; }
   .info-empresa div {
     display: flex;
@@ -285,5 +330,19 @@ main .container .row .col-md-5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 10% 5%; }
-  main .container {
-    width: 100%; } }
+    .main .unidades-de-negocio div .vuela {
+      display: none; }
+    .main .unidades-de-negocio div .vuela2 {
+      display: inherit; }
+  .main .vuela {
+    display: none; }
+  .contactate .container {
+    width: 100%; }
+  .noticias .destacadas .noticias-destacadas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 10% 5%; }
+  .noticias h1 {
+    color: #032336; }
+  .noticias h2 {
+    color: #032336; } }

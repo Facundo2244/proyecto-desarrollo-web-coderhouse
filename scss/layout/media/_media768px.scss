@@ -29,8 +29,10 @@
         }
 
     }
-    .novedades{
-        grid-template-columns: 1fr;
+    .noticias{
+        .novedades{
+            grid-template-columns: 1fr;
+        }
     }
     .info-empresa{
        div{
@@ -56,16 +58,44 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             padding: 10% 5%;
+            div{
+                .vuela{
+                    display: none;
+                
+                }
+                .vuela2{
+                    display: inherit;
+                }
+            }
+        }
+        .vuela{
+            display: none;
         }
     }
-    main{
+    .contactate{
         .container{
             width: 100%;
         }
     }
-    
-    
-
-
-
+    .noticias{
+        .destacadas{
+            .noticias-destacadas{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                padding: 10% 5%;
+                }
+        }
+        h1{
+            color: #032336;
+        }
+        h2{
+            color: #032336;
+        }
+    }    
 }
+    
+    
+
+
+
+

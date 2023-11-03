@@ -1,8 +1,5 @@
 nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (row,wrap,space-between,center);
     background-color: $color-header-footer;
     padding: 1rem 1.5rem;  
     ul{

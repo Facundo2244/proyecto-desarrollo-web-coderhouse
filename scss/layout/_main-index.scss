@@ -1,6 +1,6 @@
 .info-empresa{
     div{
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        @include grid (none, repeat(3,1fr), none, none);
+
     }
 }

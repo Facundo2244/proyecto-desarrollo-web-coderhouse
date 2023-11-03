@@ -3,3 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: $color-secundario;
+    text-align: center;
+    font-weight: map-get($grosorfuentes , titulos );
+}
+h2{
+    color: $color-secundario;
+    margin-top: 2%;
+    font-weight: map-get($grosorfuentes , titulos );
+    text-align: center;
+}   
+
+p{
+    color: $color-principal;
+    font-weight: map-get($grosorfuentes , parrafos );
+}
