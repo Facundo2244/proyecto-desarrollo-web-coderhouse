@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -26,6 +27,9 @@ a{
     color: #CF142C;
     font-family: 'Poppins', sans-serif;  
     font-size: medium;
+}
+a:hover{
+    color: #006864;
 }
 nav #toggle, nav label{
     display: none;
@@ -287,6 +291,44 @@ h2{
     transform: perspective(600px) rotateY(360deg);
 }
 
+/* bootstrap-contacto */
+
+main .container{
+    width: 80%;
+    padding: 45px;
+    border-radius: 0; 
+}
+.row{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   
+}
+.col-md-7{
+    padding: 20px;
+}
+.col-md-5{
+    padding: 20px;
+    background-color: rgb(00, 68, 64, 0.1);
+}
+.form-control{
+    height: 52px;
+    background: white;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: none !important;
+    border: 1px solid rgb(00, 68, 64, 0.1);
+}
+.bi{
+    font-size: 20px;
+}
+
+.d-flex p{
+    font-size: 18px;
+    padding-left: 18px;
+}
+#exampleFormControlTextarea1{
+    height: 104px;
+}
+
 /* responsive */
 
 @media(max-width:768px){
@@ -353,5 +395,8 @@ h2{
         font-size: .8rem;
         gap: 3%;
         padding: 10% 0;
-    }        
+    }
+    main .container{
+        width: 100%;
+    }
 }
