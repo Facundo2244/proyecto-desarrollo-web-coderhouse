@@ -9,20 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./assets/img/isotipo-marca.png"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+
 </head>
 <body>
     <!-- Header -->
-    <header class="menu">
-        <a href="#"><img src="./assets/img/isotipo-marca.png" alt="Logo institucional"></a>
+    <header >
         <nav>
-            <ul>
-                <li><a href="./pages/quienes-somos.html">¿QUIENES SOMOS?</a></li>
-                <li><a href="./pages/nuestros.productos.html">NUESTROS PRODUCTOS</a></li>
-                <li><a href="./pages/novedades.html">NOVEDADES</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
+            <a class="logo" href="#"><img src="./assets/img/isotipo-marca.png" alt="Logo institucional de la empresa Villares"></a>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <i class="material-icons">
+                    menu
+                </i>
+            </label>
+            <div class="menu">
+                 <ul>
+                    <li><a href="./pages/nuestros.productos.html">Productos</a></li>
+                    <li><a href="./pages/quienes-somos.html">Nosotros</a></li>
+                    <li><a href="./pages/novedades.html">Novedades</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                 </ul>
+            </div>    
         </nav>
-        <a href="./pages/futuras-paginas/futura-pagina.ingles.html"><img src="./assets/img/reino-unido.png" alt="Bandera Reino Unido"></a>
     </header>
     <!--Banner  -->
     <section class="banner">
