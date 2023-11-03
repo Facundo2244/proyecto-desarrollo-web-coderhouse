@@ -1,0 +1,15 @@
+.productos-expo{
+    background-color: $color-principal;
+    h1{
+        color: white;
+    }
+    section{
+        @extend nav;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: $color-principal;
+        padding: 5% 0;
+        align-items: center;
+    }
+}
+

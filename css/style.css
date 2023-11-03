@@ -4,29 +4,27 @@
   margin: 0;
   box-sizing: border-box; }
 
-nav {
+nav, .productos-expo section, footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #e3eeee;
   padding: 1rem 1.5rem; }
-  nav ul {
+  nav ul, .productos-expo section ul, footer ul {
     list-style: none;
     display: flex;
     gap: 5rem; }
-  nav #toggle {
+  nav #toggle, .productos-expo section #toggle, footer #toggle, nav label, nav .productos-expo section label, .productos-expo section nav label, .productos-expo section label, nav footer label, footer nav label, footer label {
     display: none; }
-  nav label {
-    display: none; }
-  nav a img {
+  nav a img, .productos-expo section a img, footer a img {
     width: 40px; }
-  nav div ul li a {
+  nav div ul li a, .productos-expo section div ul li a, footer div ul li a {
     text-decoration: none;
     color: #CF142C;
     font-family: 'Poppins', sans-serif;
     font-weight: 700; }
-    nav div ul li a:hover {
+    nav div ul li a:hover, .productos-expo section div ul li a:hover, footer div ul li a:hover {
       color: #006864; }
 
 .banner a img {
@@ -37,37 +35,255 @@ nav {
   display: grid;
   grid-template-rows: repeat(3, 1fr); }
 
+.productos-expo {
+  background-color: #006864; }
+  .productos-expo h1 {
+    color: white; }
+  .productos-expo section {
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #006864;
+    padding: 5% 0;
+    align-items: center; }
+
+h1 {
+  color: #CF142C;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; }
+
+h2 {
+  color: #CF142C;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2%; }
+
+.main {
+  background-image: url(../../assets/img/fondo-1440-1501.jpg);
+  background-size: cover;
+  padding: 2% 5%; }
+  .main .historia {
+    text-align: center;
+    color: #006864;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; }
+    .main .historia .video {
+      max-width: 100%; }
+  .main .unidades-de-negocio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    color: #006864;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    gap: 3%;
+    padding: 2% 0; }
+    .main .unidades-de-negocio img {
+      max-width: 100%; }
+    .main .unidades-de-negocio p {
+      margin: 2%; }
+    .main .unidades-de-negocio div .vuela2 {
+      display: none; }
+
+.sub-novedades {
+  text-align: center; }
+
+.novedades {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; }
+
+main .container {
+  width: 80%;
+  padding: 45px;
+  border-radius: 0; }
+  main .container .row {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+
 footer {
-  background-color: #e3eeee;
   padding: 1%;
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: unset;
   color: #CF142C;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  text-decoration: none;
-  align-items: center; }
+  text-decoration: none; }
   footer .clientes-proveedores a {
     color: #CF142C;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
     text-decoration: none; }
   footer .clientes-proveedores ul {
     list-style-type: none; }
   footer .redes-sociales img {
-    height: 40px;
+    height: 35px;
     margin-left: 5px; }
 
-.card {
+.info-empresa article {
   display: flex;
   align-items: center;
   text-align: center;
   margin: 1% 5%; }
-  .card img {
+  .info-empresa article img {
     max-width: 50%; }
-  .card p {
+  .info-empresa article p {
     color: #006864;
     font-family: 'Poppins', sans-serif;
     padding-left: 2%;
     font-size: 85%;
     font-weight: 700; }
+
+.productos-expo section .productos {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px; }
+  .productos-expo section .productos .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .7s; }
+  .productos-expo section .productos .frente {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000; }
+    .productos-expo section .productos .frente img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .productos-expo section .productos .frente h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center; }
+  .productos-expo section .productos .dorso {
+    transform: perspective(600px) rotateY(180deg);
+    background: #032336;
+    padding: 10px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000; }
+    .productos-expo section .productos .dorso .link {
+      border-top: solid 1px #f3f3f3;
+      height: 50px;
+      line-height: 50px; }
+      .productos-expo section .productos .dorso .link a {
+        color: white; }
+    .productos-expo section .productos .dorso h3 {
+      font-size: 30px;
+      margin-top: 20px;
+      letter-spacing: 2px;
+      font-family: 'Poppins', sans-serif; }
+    .productos-expo section .productos .dorso p {
+      letter-spacing: 1px;
+      font-family: 'Poppins', sans-serif; }
+  .productos-expo section .productos:hover .frente {
+    transform: perspective(600px) rotateY(180deg); }
+  .productos-expo section .productos:hover .dorso {
+    transform: perspective(600px) rotateY(360deg); }
+
+.novedades div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  color: #006864;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; }
+  .novedades div img {
+    max-width: 100%; }
+  .novedades div p {
+    margin: 10px 0; }
+  .novedades div a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #006864;
+    border: 1px solid #006864;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-family: 'Poppins', sans-serif; }
+    .novedades div a:hover {
+      background-color: mediumaquamarine;
+      transform: scale(1.2); }
+  .novedades div:hover {
+    box-shadow: 5px 5px 200px black;
+    transform: translateY(-3%); }
+
+main .container .row .col-md-7 {
+  padding: 20px; }
+  main .container .row .col-md-7 .form-control {
+    height: 52px;
+    background: white;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: none !important;
+    border: 1px solid #006864; }
+  main .container .row .col-md-7 #exampleFormControlTextarea1 {
+    height: 104px; }
+
+main .container .row .col-md-5 {
+  padding: 20px;
+  background-color: #e3eeee; }
+  main .container .row .col-md-5 .bi {
+    font-size: 20px; }
+  main .container .row .col-md-5 .d-flex p {
+    font-size: 18px;
+    padding-left: 18px; }
+
+@media (max-width: 767px) {
+  nav .menu, .productos-expo section .menu, footer .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
+    nav .menu ul, .productos-expo section .menu ul, footer .menu ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem 0px;
+      gap: 3rem; }
+  nav label, .productos-expo section label, footer label {
+    display: flex;
+    color: #CF142C;
+    cursor: pointer; }
+  nav #toggle:checked ~ .menu, .productos-expo section #toggle:checked ~ .menu, footer #toggle:checked ~ .menu, nav label:checked ~ .menu, .productos-expo section nav label:checked ~ .menu, nav .productos-expo section label:checked ~ .menu, footer nav label:checked ~ .menu, nav footer label:checked ~ .menu, nav .productos-expo section label:checked ~ .menu, .productos-expo section nav label:checked ~ .menu, .productos-expo section label:checked ~ .menu, footer .productos-expo section label:checked ~ .menu, .productos-expo section footer label:checked ~ .menu, nav footer label:checked ~ .menu, footer nav label:checked ~ .menu, .productos-expo section footer label:checked ~ .menu, footer .productos-expo section label:checked ~ .menu, footer label:checked ~ .menu {
+    height: 100%; }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px; }
+    footer .redes-sociales img {
+      height: 30px; }
+  .novedades {
+    grid-template-columns: 1fr; }
+  .info-empresa div {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0; }
+    .info-empresa div article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 1 5%; }
+      .info-empresa div article img {
+        max-width: 100%; }
+  .main .unidades-de-negocio {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 10% 5%; }
+  main .container {
+    width: 100%; } }

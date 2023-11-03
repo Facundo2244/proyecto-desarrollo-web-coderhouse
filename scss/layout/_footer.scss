@@ -1,18 +1,16 @@
 footer{
-    background-color:$color-header-footer;
+    @extend nav;
     padding: 1%;
-    display: flex;
-    justify-content: space-between;
+    flex-wrap:unset;
     color: $color-secundario;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    align-items: center;
+
+
     .clientes-proveedores{
         a{
             color: $color-secundario;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
             text-decoration: none;
         }
         ul{
@@ -21,8 +19,8 @@ footer{
     }
     .redes-sociales{
         img{
-            height: 40px;
-    margin-left: 5px;
+            height: 35px;
+            margin-left: 5px;
         }
     }
        

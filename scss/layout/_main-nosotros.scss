@@ -1,0 +1,47 @@
+h1{
+    color: $color-secundario;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+h2{
+    color: $color-secundario;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2%;
+}
+.main{
+    background-image:url(../../assets/img/fondo-1440-1501.jpg);
+    background-size: cover;
+    padding: 2% 5%;
+    .historia{
+        text-align: center;
+        color: $color-principal;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        .video{
+            max-width: 100%;
+        }
+    }
+    .unidades-de-negocio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+        color: $color-principal;
+        font-family: 'Poppins', sans-serif;
+        font-size: .8rem;
+        gap: 3%;
+        padding: 2% 0;
+        img{
+            max-width: 100%;
+        }
+        p{
+            margin: 2%;
+        }
+        div{
+            .vuela2{
+                display: none;
+            }
+        }
+    }
+}
+

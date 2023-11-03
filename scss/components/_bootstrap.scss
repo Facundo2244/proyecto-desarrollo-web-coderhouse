@@ -1,0 +1,32 @@
+main{
+    .container{
+        .row{
+            .col-md-7{
+                padding: 20px;
+                .form-control{
+                    height: 52px;
+                    background: white;
+                    color: #000;
+                    font-size: 14px;
+                    border-radius: 2px;
+                    box-sizing: none !important;
+                    border: 1px solid $color-principal;
+                }
+                #exampleFormControlTextarea1{
+                    height: 104px;
+                }
+            }
+            .col-md-5{
+                padding: 20px;
+                background-color: $color-header-footer;
+                .bi{
+                    font-size: 20px;
+                }
+                .d-flex p{
+                    font-size: 18px;
+                    padding-left: 18px;
+                }                    
+            }                        
+        }
+    }
+}

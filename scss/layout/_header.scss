@@ -14,7 +14,7 @@ nav{
         display: none;
     }
     label{
-        display: none;
+        @extend #toggle;
     }
     a{
         img{
