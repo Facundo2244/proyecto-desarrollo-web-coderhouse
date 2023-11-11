@@ -145,7 +145,7 @@ footer {
   flex-wrap: none;
   justify-content: space-between;
   text-align: center;
-  background-color: #e9eee3;
+  background-color: #e3eeee;
   padding: 1%;
   color: #CF142C;
   text-decoration: none;
@@ -291,6 +291,14 @@ main .container .row .col-md-5 {
     font-size: 18px;
     padding-left: 18px; }
 
+.error-404{
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  width: 100%;}
+  .error-404 img{
+    width: 50%;
+  }
 @media (max-width: 767px) {
   nav .menu {
     width: 100%;
@@ -347,3 +355,11 @@ main .container .row .col-md-5 {
     color: #032336; }
   .noticias h2 {
     color: #032336; } }
+@media (max-width: 374px) {
+  .noticias h2{
+    margin-top: 10%;
+  }
+  .contactate h1{
+    color: #e3eeee;
+  }
+} 
