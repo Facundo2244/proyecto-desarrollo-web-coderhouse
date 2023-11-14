@@ -15,6 +15,7 @@ footer{
         }
         ul{
             list-style-type: none;
+            margin-bottom: 0;
         }
     }
     .redes-sociales{
@@ -27,6 +28,7 @@ footer{
         p{
             color: $color-secundario;
             font-weight: map-get($grosorfuentes , titulos );
+            margin-bottom: 0;
         }
     }
        

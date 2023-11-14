@@ -34,7 +34,10 @@ nav {
   nav ul {
     list-style: none;
     display: flex;
-    gap: 5rem; }
+    gap: 5rem;
+    margin: 0;
+    margin-bottom: 0;
+    padding-left: 0; }
   nav #toggle, nav label {
     display: none; }
   nav a img {
@@ -156,13 +159,16 @@ footer {
     color: #CF142C;
     text-decoration: none; }
   footer .clientes-proveedores ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0; }
   footer .redes-sociales img {
     height: 35px;
     margin-left: 5px; }
   footer div p {
     color: #CF142C;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 0; }
 
 .info-empresa article {
   display: flex;
