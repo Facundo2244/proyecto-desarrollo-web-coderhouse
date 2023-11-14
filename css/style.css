@@ -150,7 +150,8 @@ footer {
   color: #CF142C;
   text-decoration: none;
   font-weight: 700;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Poppins', sans-serif; }
   footer .clientes-proveedores a {
     color: #CF142C;
     text-decoration: none; }
