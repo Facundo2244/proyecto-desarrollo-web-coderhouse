@@ -308,7 +308,8 @@ main .container .row .col-md-5 {
     font-size: 20px; }
   main .container .row .col-md-5 .d-flex p {
     font-size: 15px;
-    padding-left: 18px; }
+    padding-left: 18px;
+    padding-top: 3px; }
 
 .error-404{
   text-align: center;
