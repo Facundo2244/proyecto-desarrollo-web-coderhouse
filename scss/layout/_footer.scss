@@ -7,6 +7,7 @@ footer{
     font-weight: 700;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    height: auto;
 
     .clientes-proveedores{
         a{
@@ -22,6 +23,7 @@ footer{
         img{
             height: 35px;
             margin-left: 5px;
+            vertical-align: middle;
         }
     }
     div{
@@ -29,6 +31,7 @@ footer{
             color: $color-secundario;
             font-weight: map-get($grosorfuentes , titulos );
             margin-bottom: 0;
+            vertical-align: middle;
         }
     }
        
