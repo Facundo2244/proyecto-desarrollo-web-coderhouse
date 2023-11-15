@@ -5,7 +5,11 @@
   box-sizing: border-box; }
 
 html {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+   }
+body{
+  line-height: normal;
+}
 
 h1 {
   color: #CF142C;
@@ -30,7 +34,8 @@ nav {
   text-align: center;
   background-color: #e3eeee;
   padding: 1rem 1.5rem; 
-  align-items: center;}
+  align-items: center;
+  height: auto;}
   nav ul {
     list-style: none;
     display: flex;
@@ -41,7 +46,8 @@ nav {
   nav #toggle, nav label {
     display: none; }
   nav a img {
-    width: 40px; }
+    width: 40px;
+  vertical-align: middle; }
   nav div ul li a {
     text-decoration: none;
     color: #CF142C;
@@ -142,6 +148,8 @@ nav {
     .contactate .container .row {
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
 
+
+
 footer {
   display: flex;
   flex-direction: none;
@@ -154,7 +162,8 @@ footer {
   text-decoration: none;
   font-weight: 700;
   align-items: center;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  height: auto;}
   footer .clientes-proveedores a {
     color: #CF142C;
     text-decoration: none; }
@@ -164,11 +173,13 @@ footer {
     padding-left: 0; }
   footer .redes-sociales img {
     height: 35px;
-    margin-left: 5px; }
+    margin-left: 5px;
+    vertical-align: middle; }
   footer div p {
     color: #CF142C;
     font-weight: 700;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+  vertical-align: middle; }
 
 .info-empresa article {
   display: flex;
