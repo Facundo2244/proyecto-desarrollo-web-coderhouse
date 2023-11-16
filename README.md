@@ -4,7 +4,7 @@
 ## Este proyecto fue realizado en el marco del Curso de Desarrollo Web de CoderHouse.
 
 ### Herramientas utilizadas
-
+![](https://i.imgur.com/FFWFBAT.png)
 
 - **FIGMA**: Utilizado para crear el **prototipo** del sitio web. [Prototipo hecho en Figma](https://www.figma.com/file/WqkQscE05CJIYxry7yjKIH/expo-villares?type=design&node-id=1%3A4&mode=design&t=CKklLgV7Er6NpOFt-1 "Prototipo hecho en Figma").
 - **HTML5**: . Sirviéndonos del uso correcto de las diferentes **etiquetas semánticas** y clases pudimos transformar en realidad el prototipo. También logramos enrutar y enlazar tanto las distintas páginas entre sí, como hacia los enlaces externos. El editor de código que utilizamos en todo el proceso fue **Visual Studio Code.**
