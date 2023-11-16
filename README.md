@@ -6,7 +6,7 @@
 ### Herramientas utilizadas
 
 
-- **FIGMA**: Utilizado para crear el **prototipo** del sitio web. [Prototipo en Figma](https://www.figma.com/file/WqkQscE05CJIYxry7yjKIH/expo-villares?type=design&node-id=0%3A1&mode=design&t=VCHkFEznKescJoQZ-1 "Prototipo en Figma").
+- **FIGMA**: Utilizado para crear el **prototipo** del sitio web. [Prototipo en Figma](https://www.canva.com/design/DAF0V_TD-U0/49BLFOe7p1sYSaTnj6kZxQ/view "Prototipo en Figma").
 - **HTML5**: . Sirviéndonos del uso correcto de las diferentes **etiquetas semánticas** y clases pudimos transformar en realidad el prototipo. También logramos enrutar y enlazar tanto las distintas páginas entre sí, como hacia los enlaces externos. El editor de código que utilizamos en todo el proceso fue **Visual Studio Code.**
 - **CSS**: Mediante sus reglas de diseño pudimos estilizar las distintas secciones de nuestras páginas aplicando **box modeling, tipografías específicas, animaciones, colores, pseudoclases** y muchos estilos más. Además transformamos la totalidad del sitio a responsive utilizando **grids, flexbox y media querys.**
 - **SASS**: Con este preprocesador pudimos trabajar de forma más limpia y ordenada nuestros estilos para luego compilarlos hacia la hoja principal. Utilizamos **Nesting, Mixins, Vars (variables) y Partials** para estructurar nuestro sitio. 
