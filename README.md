@@ -3,6 +3,12 @@
 [![Exportaciones Alimentos Villares](https://expovillares.netlify.app/assets/img/Expo.jpg "Exportaciones Alimentos Villares")](https://expovillares.netlify.app/ "Exportaciones Alimentos Villares")
 ## Este proyecto fue realizado en el marco del Curso de Desarrollo Web de CoderHouse.
 
+## Objetivo 
+
+Generar un sitio web utilizado para captar potenciales clientes para la venta mayorista de Alimentos Villares.
+Con ese propósito creamos 5 páginas:
+- 
+
 ### Herramientas utilizadas
 ![](https://i.imgur.com/FFWFBAT.png)
 
