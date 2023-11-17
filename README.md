@@ -12,6 +12,8 @@
 - [Quiénes somos?](https://expovillares.netlify.app/pages/quienes-somos "Quiénes somos?") : Página en donde se cuenta con más detalle la historia de la empresa y sus unidades de negocio.
 - [Novedades](https://expovillares.netlify.app/pages/novedades "Novedades") : Página dedicada a mostrar las noticias y tendencias relacionas a la empresa y sus productos.
 - [Contacto](https://expovillares.netlify.app/pages/contacto "Contacto"): Página que posibilita al usuario/cliente comunicarse con la empresa y ser asesorado.
+- [Página 404](https://expovillares.netlify.app/pages/page-404 "Página 404"): Página enlazada a las secciones "Proveedores" y "Clientes" para indicar que éstas aún no se encuentran en funcionamiento.
+
 
 ### Herramientas utilizadas
 ![](https://i.imgur.com/FFWFBAT.png)
